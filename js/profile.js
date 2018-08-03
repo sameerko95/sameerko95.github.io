@@ -6,7 +6,7 @@ $(document).ready(function(){
     }
 
     $(document).on('click', '[name="shortcut"]', function(){
-        console.log($(this).text());
+        // console.log($(this).text());
         var div_name = $(this).text().toLowerCase();
         $('#'+div_name).show();
     });
@@ -42,13 +42,13 @@ $(document).ready(function(){
         
         var temp_1 = $('#work').height()+$('#about').height();
         if($(this).scrollTop()>=$('#about').height() && $(this).scrollTop()<temp_1){
-            console.log("Show work");
+            // console.log("Show work");
             $('#work').show();
         }
 
         var temp_2 = $('#work').height()+$('#about').height()+$('#projects').height();
         if($(this).scrollTop()>=temp_1 && $(this).scrollTop()<temp_2){
-            console.log("Show projects");
+            // console.log("Show projects");
             $('#projects').show();
         }
         
