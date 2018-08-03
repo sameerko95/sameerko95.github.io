@@ -68,11 +68,11 @@ $(document).ready(function(){
         for(var i=0;i<titles[j];i++){
             if(i==0)
                 var element =   '<div class="carousel-item active">'+
-                                    '<img class="carousel-images" src="images/projects/carousel_'+(j+1).toString()+'_'+ (i+1).toString() +'.JPG" alt="...">'+
+                                    '<img class="carousel-images" src="images/projects/carousel_'+(j+1).toString()+'_'+ (i+1).toString() +'.png" alt="...">'+
                                 '</div>';
             else
                 var element =   '<div class="carousel-item">'+
-                                    '<img class="carousel-images" height="20em" src="images/projects/carousel_'+(j+1).toString()+'_'+ (i+1).toString() +'.JPG" alt="...">'+
+                                    '<img class="carousel-images" height="20em" src="images/projects/carousel_'+(j+1).toString()+'_'+ (i+1).toString() +'.png" alt="...">'+
                                 '</div>';
             $('#project_' + (j+1).toString()).append(element);
         }
