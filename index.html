@@ -1,0 +1,321 @@
+<html>
+    <head>
+        <title>Sameer Korlahalli</title>
+        <link rel="icon" href="favicon.png" type="image/gif" sizes="25x25">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/profile.css" rel="stylesheet">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/profile.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-light bg-light fixed-top">
+            <a class="navbar-brand title-bar" href="#">
+                <table class="table table-borderless table-condensed" style="margin-bottom: 0.1rem">
+                    <tr>
+                        <td>
+                            <div id="profile-pic">
+                                <img src="images/profile-pic/profile.jpg" width="45" height="45" class="profile-pic d-inline-block align-top">
+                                <div id="pic">
+                                    <img src="images/profile-pic/profile.jpg" width="150" height="150" class="profile-pic">
+                                </div>
+                            </div>   
+                        </td>
+                        <td style="text-align: center; padding: 0.5rem">
+                            <h5 class="full-name">Sameer Korlahalli</h5>
+                            <a href="https://www.linkedin.com/in/sameer-korlahalli/" target="_blank">
+                                <img src="https://png.icons8.com/metro/50/000000/linkedin.png" href="" width="20" height="20">
+                            </a>
+                            <a href="https://www.github.com/sameerko95" target="_blank">
+                                <img src="https://png.icons8.com/metro/50/000000/github.png" width="20" height="20">
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </a>
+            
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#about" name="shortcut">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work" name="shortcut">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects" name="shortcut">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://drive.google.com/file/d/1K3jEMM8XrFu08QdU_ETFvgdWqn5dlau6/view?usp=sharing" target="_blank">Resume</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <ul style="margin-top: 5%">
+            <li class="info-section" style="background: url('images/cloud.jpg'); background-position: center">
+                <div class="contents active" id="about" name="content">
+                    <h3 class="center-aligned">
+                        <span>Software Developer</span><br>
+                        <span><h5>CS Graduate Student at New York University</h5></span>
+                    </h3>
+                </div>
+            </li>
+            <li class="info-section">
+                <div class="contents" id="work" name="content">
+                    <h2 class="section-title">Work</h2>
+                    <table class="table table-borderless table-condensed" name="work-exp">
+                        <tr>
+                            <td class="company-logo-container">
+                                <div class="company-logo" style="background: url('images/work/nyu.jpg');background-size: cover;background-position: center;"></div>
+                            </td>
+                            <td>
+                                <div name="company" class="list-group center-aligned list-contents borderless">
+                                    <div class="list-group-item list-group-item-action flex-column align-items-start">
+                                        <div class="d-flex w-200 justify-content-between">
+                                            <h5 class="mb-1">Software Development Intern</h5>
+                                        </div>
+                                        <h6 class="company-titles">NYU IT Services</h6>
+                                        <p class="mb-1" style="text-align: left">
+                                            <h6>Learning Analytics (Python, AWS & pySpark)</h6>
+                                            Developing data integration and streaming services from Oracle DB and video streaming APIs using AWS Lambda, S3, RDS
+                                            <br>Specifically working on improving the scalability of the integration and processing of incoming data using pySpark
+                                            <br>
+                                            <br>
+                                            <h6>API Approval Request System (Python, AngularJS & AWS)</h6>
+                                            Developed an API approval request system for data and related APIs pertaining to all departments and schools under the university
+                                            <br>Used MySQL in RDS and S3 as a secondary data store for request related information and Lambda functions as the back end
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="company-logo-container">
+                                <div class="company-logo" style="background: url('images/work/bab.png');background-size: cover;background-position: center;"></div>
+                            </td>
+                            <td>
+                                <div name="company" class="list-group center-aligned list-contents borderless">
+                                    <div class="list-group-item list-group-item-action flex-column align-items-start">
+                                        <div class="d-flex w-200 justify-content-between">
+                                                <h5 class="mb-1">Full Stack Developer Intern</h5>
+                                        </div>
+                                        <h6 class="company-titles">Big Apple Buddy</h6>
+                                        <p class="mb-1" style="text-align: left">
+                                            Developed a mission critical module for significantly decreasing the response time to consumer product quotation requests, thereby increasing the conversion rate of the leads
+                                            <br><br>
+                                            Worked on the design, implementation, deployment as well as its seamless integration with the company’s existing workflow using Django, PostgreSQL, AWS along with Zendesk, FedEx APIs
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+            <li class="info-section">
+                
+                <div class="contents" id="projects" name="content">
+                    <h2 class="section-title">Projects</h2>
+                    <div id="accordion" class="center-aligned">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <table class="table table-borderless table-condensed" style="margin-bottom: 0.5rem">
+                                    <tr>
+                                        <td style="width: 15%">
+                                            <img width="70" height="70" style="border-radius: 100%; border: 1px solid; background: white" src="images/logos/tf-aws.png">
+                                        </td>
+                                        <td style="vertical-align: middle">
+                                            <p style="font-weight: bold">
+                                                <a href="https://github.com/sameerko95/Food-Image-Recognition-System" target="_blank" style="color: black">
+                                                    Food Image Recognition System - AWS, TensorFlow <span><img src="https://png.icons8.com/metro/50/000000/external-link.png" width="10" height="10"></span>
+                                                </a>
+                                                <button class="btn btn-link expand" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    <img class="accordion-control" src="https://png.icons8.com/metro/50/000000/plus-math.png" width="12" height="12">
+                                                </button>
+                                            </p>
+                                            <div>
+                                                Developed an application to recognize food items from an uploaded image and list nearby restaurants offering the identified food item
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul class="project-desc">
+                                        <li>Used TensorFlow to retrain the penultimate layer of Inception V3 model on a food categories dataset with an accuracy of 90.4%</li>
+                                        <li>Utilized S3 to host a static webpage and used Lambda Functions for business logic</li>
+                                        <li>Deployed the trained model on EC2, from which results for a particular image were fetched by a lambda function</li>
+                                        <li>Implemented cognito for user athentication and RDS for storing restaurant information</li>
+                                    </ul>
+                                    <div id="carousel_1" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner" id="project_1"></div>
+                                        <a class="carousel-control-prev" href="#carousel_1" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carousel_1" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br>
+                        
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <table class="table table-borderless table-condensed" style="margin-bottom: 0.5rem">
+                                    <tr>
+                                        <td style="width: 15%">
+                                            <img width="70" height="70" style="border-radius: 100%; border: 1px solid" src="images/logos/keras-python.png">
+                                        </td>
+                                        <td style="vertical-align: middle">
+                                            <p style="font-weight: bold">
+                                                <a href="https://github.com/sameerko95/Detection-of-Arrhythmia-Signal-Processing-and-Deep-Learning" target="_blank" style="color: black">
+                                                    Arrhythmia Detection - Signal Processing and Deep Learning <span><img src="https://png.icons8.com/metro/50/000000/external-link.png" width="10" height="10"></span> 
+                                                </a>                                    
+                                                <button class="btn btn-link expand" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                    <img class="accordion-control" src="https://png.icons8.com/metro/50/000000/plus-math.png" width="12" height="12">
+                                                </button>
+                                            </p>
+                                            <div>
+                                                Developed a project as part of the Audio Content Analysis course to detect arrhythmia from PCG signals
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul class="project-desc">
+                                        <li>
+                                            Used signal processing concepts such as Onset Detection for pre-processing and Spectrograms for feature extraction
+                                        </li>
+                                        <li>
+                                            Developed a 3 layer Convolutional Neural Net for the detection of arrhythmia using Keras (Python)
+                                        </li>
+                                        <li>
+                                            Trained the model using High Performance Cluster Computing (HPC)
+                                        </li>
+                                    </ul>
+                                    <div id="carousel_2" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner" id="project_2"></div>
+                                        <a class="carousel-control-prev" href="#carousel_2" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carousel_2" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br>
+                        
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <table class="table table-borderless table-condensed" style="margin-bottom: 0.5rem">
+                                    <tr>
+                                        <td style="width: 15%">
+                                            <img width="70" height="70" style="border-radius: 100%; border: 1px solid; background: white" src="images/logos/p-aws.png">
+                                        </td>
+                                        <td style="vertical-align: middle">
+                                            <p style="font-weight: bold">
+                                                <a href="https://github.com/sameerko95/TweetMap-V2" target="_blank" style="color: black">
+                                                    TweetMap - AWS Serverless Computing <span><img src="https://png.icons8.com/metro/50/000000/external-link.png" width="10" height="10"></span>
+                                                </a>
+                                                <button class="btn btn-link expand" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                    <img class="accordion-control" src="https://png.icons8.com/metro/50/000000/plus-math.png" width="12" height="12">
+                                                </button>
+                                            </p>
+                                            <div>
+                                                Designed and implemented a dynamic web application to capture live tweets using the Twitter API and visualize them on a map
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul class="project-desc">
+                                        <li>
+                                            Used SQS to queue the incoming live tweets and extracted the sentiment of each tweet using Watson NLU API
+                                        </li>
+                                        <li>
+                                            Used Elasticsearch to store the processed tweets
+                                        </li>
+                                        <li>
+                                            Implemented the application as a serverless system using Lambda functions and Amazon’s API gateway
+                                        </li>
+
+                                        <div id="carousel_3" class="carousel slide" data-ride="carousel">
+                                            <div class="carousel-inner" id="project_3"></div>
+                                            <a class="carousel-control-prev" href="#carousel_3" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carousel_3" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            </a>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br>
+                        
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <table class="table table-borderless table-condensed" style="margin-bottom: 0.5rem">
+                                    <tr>
+                                        <td style="width: 15%">
+                                            <img width="70" height="70" style="border-radius: 100%; border: 1px solid; background: white" src="images/logos/sklearn.png">
+                                        </td>
+                                        <td style="vertical-align: middle">
+                                            <p style="font-weight: bold">
+                                                <a href="https://github.com/sameerko95/SenseMe---Monitoring-Mental-Health-Using-Smartphone-Data" target="_blank" style="color: black">
+                                                    Monitoring Mental Health using Smartphone Data – Data Science <span><img src="https://png.icons8.com/metro/50/000000/external-link.png" width="10" height="10"></span>
+                                                </a>
+                                                <button class="btn btn-link expand" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                                    <img class="accordion-control" src="https://png.icons8.com/metro/50/000000/plus-math.png" width="12" height="12">
+                                                </button>
+                                            </p>
+                                            <div>
+                                                Worked on a project to predict mental state of students using smartphone usage data such as sensory data, call logs & app usage
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul class="project-desc">
+                                        <li>
+                                            Preprocessed the data by merging discrete datasets and eliminated redundancies using dimensionality reduction
+                                        </li>
+                                        <li>
+                                            Used Lasso along with linear regression to identify the relevant features and predict stress levels of students
+                                        </li>
+                                    </ul>
+                                    <div id="carousel_4" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner" id="project_4"></div>
+                                        <a class="carousel-control-prev" href="#carousel_4" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carousel_4" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </body>
+</html>
