@@ -63,7 +63,7 @@ $(document).ready(function(){
         $('.document-view').show();
     });
     
-    var titles = [5,3,2,1];
+    var titles = [5,2,3,1];
     for(var j=0;j<4;j++){
         for(var i=0;i<titles[j];i++){
             if(i==0)
