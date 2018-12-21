@@ -63,18 +63,20 @@ $(document).ready(function(){
         $('.document-view').show();
     });
     
-    var titles = [5,2,3,1];
-    for(var j=0;j<4;j++){
+    var titles = [1,5,2,3,1];
+    for(var j=0;j<5;j++){
         for(var i=0;i<titles[j];i++){
             if(i==0)
                 var element =   '<div class="carousel-item active">'+
-                                    '<img class="carousel-images" src="images/projects/carousel_'+(j+1).toString()+'_'+ (i+1).toString() +'.png" alt="...">'+
+                                    '<img class="carousel-images" src="images/projects/carousel_'+(j).toString()+'_'+ (i+1).toString() +'.png" alt="...">'+
                                 '</div>';
+                
             else
                 var element =   '<div class="carousel-item">'+
-                                    '<img class="carousel-images" height="20em" src="images/projects/carousel_'+(j+1).toString()+'_'+ (i+1).toString() +'.png" alt="...">'+
+                                    '<img class="carousel-images" height="20em" src="images/projects/carousel_'+(j).toString()+'_'+ (i+1).toString() +'.png" alt="...">'+
                                 '</div>';
-            $('#project_' + (j+1).toString()).append(element);
+            
+            $('#project_' + (j).toString()).append(element);
         }
     }
         

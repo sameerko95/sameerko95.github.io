@@ -46,7 +46,7 @@
                     <a class="nav-link" href="#projects" name="shortcut">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Sameer Korlahalli.pdf" target="_blank">Resume</a>
+                    <a class="nav-link" href="Sameer_Korlahalli.pdf" target="_blank">Resume</a>
                 </li>
             </ul>
 
@@ -67,7 +67,9 @@
                     <table class="table table-borderless table-condensed" name="work-exp">
                         <tr>
                             <td class="company-logo-container">
-                                <div class="company-logo" style="background: url('images/work/nyu.jpg');background-size: cover;background-position: center;"></div>
+                                <a href = "https://www.nyu.edu/life/information-technology.html" target="_blank">
+                                    <div class="company-logo" style="background: url('images/work/nyu.jpg');background-size: cover;background-position: center;"></div>
+                                </a>
                             </td>
                             <td>
                                 <div name="company" class="list-group center-aligned list-contents borderless">
@@ -76,7 +78,12 @@
                                             <h5 class="mb-1">Software Development Intern</h5>
                                         </div>
                                         <h6 class="company-titles">NYU IT Services</h6>
+                                        <br>
                                         <p class="mb-1" style="text-align: left">
+                                            <h6>Public Surveillance System (Python, Kafka, JavaScript, Raspberry Pi)</h6>
+                                            Developing a real-time surveillance system for university infrastructure
+                                            <br>
+                                            <br>
                                             <h6>Learning Analytics (Python, AWS & pySpark)</h6>
                                             Developing data integration and streaming services from Oracle DB and video streaming APIs using AWS Lambda, S3, RDS
                                             <br>Specifically working on improving the scalability of the integration and processing of incoming data using pySpark
@@ -92,7 +99,9 @@
                         </tr>
                         <tr>
                             <td class="company-logo-container">
-                                <div class="company-logo" style="background: url('images/work/bab.png');background-size: cover;background-position: center;"></div>
+                                <a href="https://www.bigapplebuddy.com/" target="_blank">
+                                    <div class="company-logo" style="background: url('images/work/bab.png');background-size: cover;background-position: center;"></div>
+                                </a>
                             </td>
                             <td>
                                 <div name="company" class="list-group center-aligned list-contents borderless">
@@ -101,6 +110,7 @@
                                                 <h5 class="mb-1">Full Stack Developer Intern</h5>
                                         </div>
                                         <h6 class="company-titles">Big Apple Buddy</h6>
+                                        <br>
                                         <p class="mb-1" style="text-align: left">
                                             Developed a mission critical module for significantly decreasing the response time to consumer product quotation requests, thereby increasing the conversion rate of the leads
                                             <br><br>
@@ -118,6 +128,48 @@
                 <div class="contents" id="projects" name="content">
                     <h2 class="section-title">Projects</h2>
                     <div id="accordion" class="center-aligned">
+                        <div class="card">
+                            <div class="card-header" id="headingZero">
+                                <table class="table table-borderless table-condensed" style="margin-bottom: 0.5rem">
+                                    <tr>
+                                        <td style="width: 15%">
+                                            <img width="70" height="70" style="border-radius: 100%; border: 1px solid; background: white" src="images/logos/go.jpg">
+                                        </td>
+                                        <td style="vertical-align: middle">
+                                            <p style="font-weight: bold">
+                                                <a href="https://github.com/sameerko95/Social-Network-Distributed-Systems" target="_blank" style="color: black">
+                                                    Socialize - A Distributed Social Network <span><img src="https://png.icons8.com/metro/50/000000/external-link.png" width="10" height="10"></span>
+                                                </a>
+                                                <button class="btn btn-link expand" data-toggle="collapse" data-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
+                                                    <img class="accordion-control" src="https://png.icons8.com/metro/50/000000/plus-math.png" width="12" height="12">
+                                                </button>
+                                            </p>
+                                            <div>
+                                                Developed a social networking application using Distributed systems concepts and utilizing a multi-server architecture using Golang
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
+                            <div id="collapseZero" class="collapse" aria-labelledby="headingZero" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul class="project-desc">
+                                        <li>Fault tolerance was implemented using raft by <a href="https://github.com/etcd-io/etcd">CoreOS</a></li>
+                                    </ul>
+                                    <div id="carousel_0" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner" id="project_0"></div>
+                                        <a class="carousel-control-prev" href="#carousel_0" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carousel_0" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="card">
                             <div class="card-header" id="headingOne">
                                 <table class="table table-borderless table-condensed" style="margin-bottom: 0.5rem">
