@@ -17,26 +17,6 @@ $(document).ready(function(){
         off();
     });
 
-    // $('.accordion-control').click(function(){
-    //     var object = $(this);
-    //     var image_source = $(this).attr('src');
-    //     console.log(image_source);
-
-    //     if(image_source.indexOf('plus')>-1)
-    //         object.attr('src', 'https://png.icons8.com/metro/50/000000/minus-math.png');
-    //     else
-    //         object.attr('src', 'https://png.icons8.com/metro/50/000000/plus-math.png');
-        
-    //     $('.accordion-control').each(function(){
-    //         if(JSON.stringify(object)!=JSON.stringify($(this))){
-    //             $(this).attr('src', 'https://png.icons8.com/metro/50/000000/plus-math.png');
-    //         }
-    //         else
-    //             console.log("in");
-    //     });
-    
-    // });
-
     $(document).scroll(function(){
         var scroll_ratio = $(this).scrollTop()/$(this).height();
         
